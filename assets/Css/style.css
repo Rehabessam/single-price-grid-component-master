@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Inter:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:wght@700&family=Young+Serif&display=swap');
+:root
+{
+    --Cyan: hsl(179, 62%, 43%);
+    --Light-cyan:hsla(179, 70%, 42%, 0.807);
+    --Bright-yellow: hsl(71, 73%, 54%);
+    --Light-gray: hsl(204, 43%, 93%);
+    --Grayish-blue: hsl(218, 22%, 67%);
+    --body-bg: #E6EFF5;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    --font-family-one:font-family: 'Karla', sans-serif; ;
+}
+body{background-color: var(--body-bg);}
+body p, h1, h2, li{
+    font-family: var(--font-family-one);
+    font-size: 16px;
+}
+.top-section{background-color: white;}
+.top-section h1{
+    color: var(--Cyan);
+    font-size: 30px;
+}
+.top-section h2{color: var(--Bright-yellow);}
+.top-section p{color: var(--Grayish-blue);}
+.middle-section{background-color: var(--Cyan);}
+.middle-section :nth-child(3)
+{transform: translate(-20px);}
+.price{
+    font-size: 40px;
+    font-weight: bold;
+}
+.price span{
+    opacity: 0.6;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 17px;
+}
+.bottom-section{background-color: var(--Light-cyan);
+color: white;}
+button{
+    color: white;
+    background-color: var(--Bright-yellow);
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+button:hover{
+    background-color: var(--Grayish-blue);
+    cursor: pointer;
+}
+li
+{
+    list-style-type: none;
+    margin-left: -12px;
+    opacity: 0.8;
+}
+@media (min-width: 768px) {
+    .borders-bottom-right {
+      border-bottom-right-radius: 6px;
+    }
+    .borders-bottom-left {
+      border-bottom-left-radius: 6px;
+    }
+  }
+  @media (max-width: 767px) {
+    .borders-bottom-small {
+      border-bottom-right-radius: 6px;
+      border-bottom-left-radius: 6px;
+    }
+  }
+  .attribution { font-size: 11px; text-align: center; margin-top: 15px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
